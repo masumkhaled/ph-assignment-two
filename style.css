@@ -1,0 +1,31 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Bebas Neue', cursive;
+}
+.container {
+    width: 1300px;
+    margin: auto;
+}
+.logo a {
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+.nav-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+menu a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+    font-size: 18px;
+    transition: .5s;
+}
+menu a:hover {
+    color: #E02C6D;
+}
