@@ -1,17 +1,25 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Bebas Neue', cursive;
+    color: #232542;
 }
 .container {
+    width: 1300px;
+    margin: auto;
+    padding: 60px 0;
+}
+/* Navigation area  */
+.header-container {
     width: 1300px;
     margin: auto;
 }
 .logo a {
     font-family: 'Pacifico', cursive;
     text-decoration: none;
-    color: black;
+    color: #232542;
     font-size: 1.5em;
 }
 .nav-area {
@@ -22,10 +30,82 @@ h1,h2,h3,h4,h5,h6 {
 menu a {
     text-decoration: none;
     margin-left: 20px;
-    color: black;
+    color: #232542;
     font-size: 18px;
     transition: .5s;
 }
 menu a:hover {
-    color: #E02C6D;
+    color: #A5DFA5;
+}
+/* Hero Container Section  */
+.half-width {
+    width: 50%;
+}
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+.hero-container h1 {
+    font-size: 5em;
+    margin: 10px 0;
+    line-height: 1;
+}
+.hero-container span {
+    font-size: 14px;
+}
+.btn {
+    background: #A5DFA5;
+    border: 1px solid #A5DFA5;
+    padding: 17px;
+    font-size: 16px;
+    color: #3f5f4b;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover {
+    background: #3f5f4b;
+    color: white;
+    transform: translateY(10px);
+    border: 1px solid #3f5f4b;
+}
+#cameraBg {
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* Brand Logo Section */
+.brand-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    align-items: center;
+}
+/* Popular Collection Section  */
+.collection-container h1 {
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+.collection-wrap {
+    display: flex;
+}
+.collection-box {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 0px 30px -10px lightgrey;
+}
+.collection-box img {
+    width: 100%;
+}
+.in-stock {
+    color: rgb(35, 167, 35);
+}
+.stock-out {
+    color: rgb(190, 1, 1);
 }
