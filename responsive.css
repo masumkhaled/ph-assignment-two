@@ -19,6 +19,9 @@
         flex-direction: column-reverse;
         
     }
+    #cameraBg {
+        margin-bottom: 30px;
+    }
     .half-width {
         width: 95%;
     }
