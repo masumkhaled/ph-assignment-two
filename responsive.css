@@ -1,0 +1,90 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container {
+        width: 95%;
+        margin: auto;
+        padding: 60px 0;
+    }
+    .logo a {
+        font-size: 1em;
+    }
+    .hero-container h1 {
+        font-size: 2em;
+    }
+    .header-container {
+        width: 95%;
+        margin: auto;
+    }
+    .hero-container {
+        flex-direction: column-reverse;
+        
+    }
+    .half-width {
+        width: 95%;
+    }
+    menu {
+        display: none;
+    }
+    .collection-wrap {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .pricing-wrap {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .footer-logo a {
+        font-size: .7em;
+    }
+    .collection-container h1 {
+        font-size: 1.5em;
+        letter-spacing: 4px;
+    }
+    .pricing-section > h3 {
+        font-size: 1.5em;
+        letter-spacing: 4px;
+    }
+    .brand-container {
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .brand-container img {
+        margin: 25px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 95%;
+        margin: auto;
+        padding: 60px 0;
+    }
+    .half-width {
+        display: block;
+    }
+    .hero-container h1 {
+        font-size: 3em;
+    }
+    .header-container {
+        width: 95%;
+        margin: auto;
+    }
+    menu {
+        display: none;
+    }
+    .collection-wrap {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .pricing-wrap {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}

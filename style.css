@@ -1,19 +1,20 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 18px;
+    margin: 0;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Bebas Neue', cursive;
     color: #232542;
 }
 .container {
-    width: 1300px;
+    width: 80%;
     margin: auto;
     padding: 60px 0;
 }
 /* Navigation area  */
 .header-container {
-    width: 1300px;
+    width: 80%;
     margin: auto;
 }
 .logo a {
@@ -40,6 +41,9 @@ menu a:hover {
 /* Hero Container Section  */
 .half-width {
     width: 50%;
+}
+div img {
+    width: 100%;
 }
 .hero-container {
     display: flex;
@@ -77,11 +81,12 @@ menu a:hover {
 }
 /* Brand Logo Section */
 .brand-container {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #efefef;
-    border-bottom: 1px solid #efefef;
-    align-items: center;
+	display: grid;
+	justify-content: space-between;
+	border-top: 1px solid #efefef;
+	border-bottom: 1px solid #efefef;
+	align-items: center;
+	grid-template-columns: auto auto auto auto auto auto auto;
 }
 /* Popular Collection Section  */
 .collection-container h1 {
@@ -90,10 +95,10 @@ menu a:hover {
     letter-spacing: 10px;
 }
 .collection-wrap {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
 .collection-box {
-    width: 30%;
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
@@ -108,4 +113,94 @@ menu a:hover {
 }
 .stock-out {
     color: rgb(190, 1, 1);
+}
+.rating i {
+    color: #FB8200;
+    font-size: 16px;
+}
+.text-center {
+    text-align: center;
+}
+/* Pricing Section  */
+.pricing-section > h3 {
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 10px;  
+}
+.pricing-section > p {
+    text-align: center;
+}
+.pricing-section > span {
+    text-align: center;
+    font-size: 14px;
+    display: block;
+}
+
+.pricing-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.pricing-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 3px solid lightgray;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 0px 30px -10px lightgrey;
+}
+.pricing-item .btn {
+    width: 100%;
+}
+.pricing-item h3 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+.pricing-item p {
+    color: lightslategray;
+}
+.pricing-item ul {
+    padding: 0;
+}
+.pricing-item li {
+    color: lightslategray;
+    list-style: none;
+    line-height: 2em;
+}
+.pricing-item li i {
+    color: rgb(31, 138, 31);
+    margin-right: 10px;
+}
+/* Footer Section  */
+.footer-section {
+    background: #232542;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-logo a {
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+}
+.copyright p {
+    text-align: center;
+    color: #fff;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+.social-links i {
+    margin: 5px;
+    background: #22213C;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 16px;
 }
